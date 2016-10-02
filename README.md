@@ -37,6 +37,8 @@ var grid = new GalleryGrid(container, {
   minWidth: 0,
   // automatically update the layout when the window size changes.
   updateOnResize: true
+  // Secondary selector (if you have some content that doesn't have an image tag)
+  secondarySelector: 'svg'
 });
 
 // instance methods

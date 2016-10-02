@@ -45,8 +45,14 @@ var GalleryGrid = function (container, options) {
             // If the data attributes are missing, image size can also be read from the html5 image attributes
             // naturalWidth/naturalHeight, but they are only available when the images are already loaded.
             var img = $('img', element);
-            w = img.data('width') || img[0].naturalWidth;
-            h = img.data('height') || img[0].naturalHeight;
+            if (img.length) {
+                w = img.data('width') || img[0].naturalWidth;
+                h = img.data('height') || img[0].naturalHeight;
+            } else {
+                var img = $(options.secondarySelector, element);
+                w = img.data('width')
+                h = img.data('height')
+            }
 
             row.push({
                 element: element,
@@ -123,7 +129,11 @@ var GalleryGrid = function (container, options) {
                     fitIncompleteRow = false;
                 }
             }
-            $('img', entry.element).css({
+            var img = $('img', entry.element);
+            if (!img) {
+              var img = $(options.secondarySelector, entry.element);
+            }
+            img.css({
                 'width': entry.width + 'px',
                 'height': entry.height + 'px'
             });
