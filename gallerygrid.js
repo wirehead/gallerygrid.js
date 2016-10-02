@@ -49,7 +49,7 @@ var GalleryGrid = function (container, options) {
                 w = img.data('width') || img[0].naturalWidth;
                 h = img.data('height') || img[0].naturalHeight;
             } else {
-                var img = $(options.secondarySelector, element);
+                img = $(options.secondarySelector, element);
                 w = img.data('width')
                 h = img.data('height')
             }
@@ -131,7 +131,7 @@ var GalleryGrid = function (container, options) {
             }
             var img = $('img', entry.element);
             if (!img) {
-              var img = $(options.secondarySelector, entry.element);
+              img = $(options.secondarySelector, entry.element);
             }
             img.css({
                 'width': entry.width + 'px',
