@@ -12,7 +12,11 @@ Download the [dist/gallerygrid.js](./dist/gallerygrid.js) or the minified [dist/
 
 ### Package managers
 
-npm: `npm install gallerygrid --save`
+npm: `npm install gallerygrid jquery --save`
+
+```
+var $ = require('jquery')
+var GalleryGrid = require('gallerygrid');
 
 Bower: `bower install gallerygrid.js --save`
 

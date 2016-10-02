@@ -7,9 +7,6 @@
  */
 
 var GalleryGrid = function (container, options) {
-    // Reuse existing jQuery and require only if not available
-    $ = $ || jQuery || require('jquery');
-
     var defaultOptions = {
         border: 0,
         targetHeight: 250,

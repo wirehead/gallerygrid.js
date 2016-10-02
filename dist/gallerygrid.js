@@ -8,9 +8,6 @@
  */
 
 var GalleryGrid = function (container, options) {
-    // Reuse existing jQuery and require only if not available
-    $ = $ || jQuery || require('jquery');
-
     var defaultOptions = {
         border: 0,
         targetHeight: 250,
@@ -175,5 +172,5 @@ var GalleryGrid = function (container, options) {
 // Export to CommonJs (Node, Browserify)
 module.exports = GalleryGrid;
 
-},{"jquery":undefined}]},{},[1])(1)
+},{}]},{},[1])(1)
 });

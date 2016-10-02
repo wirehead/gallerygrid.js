@@ -25,6 +25,9 @@
   "dependencies": {
     "jquery": "^3.1.0"
   },
+  "peerDependencies": {
+    "jquery": "^3.1.0"
+  },
   "devDependencies": {
     "browserify": "^13.1.0",
     "del": "^2.2.1",
@@ -35,6 +38,7 @@
     "gulp-uglify": "^2.0.0",
     "jshint": "^2.9.2",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "jquery": "^3.1.0"
   }
 }
